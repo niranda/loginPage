@@ -54,10 +54,10 @@
   .login-page-wrapp {
     flex-direction: column;
     align-items: center;
+    margin-top: 50px;
   }
 
   .login-form-wrap {
-    margin-top: 50px;
     width: 100%;
   }
 
