@@ -11,8 +11,6 @@ export async function login(email, password) {
       `/auth/login`,
       JSON.stringify({ email, password })
     );
-
-    console.log(response);
     return response.data;
   } catch (err) {
     console.log(err);

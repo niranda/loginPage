@@ -33,7 +33,6 @@ export async function signUp(
       })
     );
 
-    console.log(response);
     return response.data;
   } catch (err) {
     console.log(err);
