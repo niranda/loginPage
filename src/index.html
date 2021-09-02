@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="login-page-wrapp d-flex">
+      <div class="login-form-wrap d-flex align-items-center">
+        <div class="form-card card ml-auto">
+          <!-- tabs -->
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                id="home-tab"
+                data-toggle="tab"
+                href="#home"
+                role="tab"
+                aria-controls="home"
+                aria-selected="true"
+                >Login</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                id="profile-tab"
+                data-toggle="tab"
+                href="#profile"
+                role="tab"
+                aria-controls="profile"
+                aria-selected="false"
+                >Sign-Up</a
+              >
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div
+              class="tab-pane fade show active"
+              id="home"
+              role="tabpanel"
+              aria-labelledby="home-tab"
+            >
+              <div class="card-body">
+                <h4 class="card-title">Please Login</h4>
+                <form name="loginForm">
+                  <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      aria-describedby="emailHelp"
+                      placeholder="Enter email"
+                      data-required="email"
+                      data-invalid-message="Please provide valid email example@example.com"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="password">Password</label>
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="password"
+                      placeholder="Password"
+                      data-required="password"
+                    />
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="profile"
+              role="tabpanel"
+              aria-labelledby="profile-tab"
+            >
+              <div class="card-body">
+                <h4 class="card-title">Please Sign-up</h4>
+                <form name="signUpForm">
+                  <div class="form-group">
+                    <label for="nickname-sign-up">Nickname</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="nickname-sign-up"
+                      placeholder="Enter nickname"
+                      data-invalid-message="Please try another one"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <div class="form-row">
+                      <div class="col">
+                        <label for="firstname-sign-up">First name</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="firstname-sign-up"
+                          placeholder="Enter first name"
+                          data-invalid-message="Please try another one"
+                          required
+                        />
+                      </div>
+                      <div class="col">
+                        <label for="firstname-sign-up">Last name</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="lastname-sign-up"
+                          placeholder="Enter last name"
+                          data-invalid-message="Please try another one"
+                          required
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="fullname-sign-up">Gender</label>
+                    <select class="form-control" id="gender-sign-up" required>
+                      <option value="">Select gender orientation</option>
+                      <option value="male">Male</option>
+                      <option value="female">Female</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="email-sign-up">Email address</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email-sign-up"
+                      aria-describedby="emailHelp"
+                      placeholder="Enter email"
+                      data-required="text"
+                      data-invalid-message="Please provide valid email example@example.com"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="date-sign-up">Date of birth</label>
+                    <input
+                      type="date"
+                      class="form-control"
+                      id="date-sign-up"
+                      data-required="date"
+                      placeholder="Enter date of birth"
+                      data-invalid-message="Please try again"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="tel-sign-up">Phone</label>
+                    <input
+                      type="tel"
+                      class="form-control"
+                      id="tel-sign-up"
+                      placeholder="Enter phone number"
+                      data-required="tel"
+                      data-invalid-message="Please try another one"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <div class="form-row">
+                      <div class="col">
+                        <label for="country-sign-up">Country</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="country-sign-up"
+                          list="countries"
+                          placeholder="Enter country"
+                          autocomplete="off"
+                          data-invalid-message="Please try another one"
+                          required
+                        />
+                        <datalist id="countries"></datalist>
+                      </div>
+                      <div class="col">
+                        <label for="city-sign-up">City</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="city-sign-up"
+                          list="cities"
+                          placeholder="Enter city"
+                          autocomplete="off"
+                          data-invalid-message="Please try another one"
+                          required
+                          disabled
+                        />
+                        <datalist id="cities"></datalist>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="password-sign-up">Password</label>
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="password-sign-up"
+                      placeholder="Password"
+                      data-required="password"
+                    />
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- tabs end -->
+        </div>
+      </div>
+      <!-- /.login-form-wrap -->
+      <div class="login-greeting-screen d-flex align-items-center">
+        <div class="login-greeting-screen-text">
+          <h1 class="login-greeting-screen-title">Welcome to my app</h1>
+          <p class="login-greeting-screen-description">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
+            inventore non accusantium earum, illo dolores reprehenderit laborum
+            ratione quos doloribus repellat eligendi deleniti. Ipsum voluptate
+            ipsa exercitationem eaque totam. A.
+          </p>
+        </div>
+      </div>
+      <!-- /.login-greeting-screen -->
+    </div>
+    <!-- /.login-page-wrapp -->
+  </body>
+</html>
