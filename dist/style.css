@@ -9836,3 +9836,26 @@ a.text-dark:hover, a.text-dark:focus {
   top: -42px;
 }
 
+@media (max-width: 729px) {
+  .login-page-wrapp {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .login-form-wrap {
+    margin-top: 50px;
+    width: 100%;
+  }
+
+  .login-form-wrap .form-card {
+    margin-left: 0 !important;
+    max-width: 729px;
+    margin-right: 0;
+  }
+
+  .login-greeting-screen {
+    width: 100%;
+    height: 100%;
+  }
+}
+
